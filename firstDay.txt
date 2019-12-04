@@ -1,0 +1,44 @@
+First Day
+
+Browser
+developer tools 
+=> Chrome or Firefox
+shortcut conmmand + shift + C
+right click + inspect
+
+Set up Terminal
+Use Hyper or iterm instead of terminal
+You can use both of them and also some editors with terminal as well, such as Vscode and etc.
+ 
+Set up iterms + zhs + powerline mode
+
+Javascript
+3 different types of data
+var
+let
+const
+
+when you update variable
+var first = ‘wes’;
+first = ‘seyoung’;
+
+const cannot be updated and changed
+
+So, const is default
+       let is used when needed (change and udpate variables)
+
+Delare variable camel-case 
+const iLoveToEatHotDogs = false;
+snake-case
+const this_is_snake_case = ‘cool’ 
+
+SNOB'N'US
+
+String
+Number
+Object
+Null
+Undefined
+Symbol
+
+Object
