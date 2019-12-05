@@ -56,4 +56,22 @@ See the 'Note about fast-forwards' in 'git push --help' for details.
 then, 
 git push origin master
 
+Functions 
+
+// Math.max(10, 12); => 12 (highest number)
+// the data in () pass one argument Math.max()
+
+* Searching default function on MDN *
+ 
+* function definition
+
+// You can make default data from any cases where I am not passing it in or forget something
+
+function yell(name = 'Seyoung Kim') {
+        return `HEY ${name.toUpperCase()}`;
+
+
+
+
+
 

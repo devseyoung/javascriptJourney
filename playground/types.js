@@ -47,3 +47,6 @@ let isDrawing = false;
 const age = 18;
 const ofAge = age > 10;
 console.log(ofAge);
+
+// Math.max(10, 12); => 12 (highest number)
+// the data in () pass one argument 
