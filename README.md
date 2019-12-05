@@ -1,2 +1,3 @@
-# javascriptJourney
-learning and studying Javascript
+# javascript Journey
+
+## learning and studying Javascript
