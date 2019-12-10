@@ -22,16 +22,28 @@
 
 
 // it still logged snickers (Lexically scope => it cares where it's defined)
+// try not to create global variables
 const dog = 'snickers';
+// window.IAmAGlobal = 'Kim';
 
-function logDog(){
+function logDog(dog){
     console.log(dog);
 }
 
 function go (){
     const dog = 'sunny';
-    logDog();
+    logDog('Kim');
 }
 
 go();
+
+function yell(){
+    console.log(name.toUpperCase());
+}
+
+function sayHi(name){
+    yell();
+}
+
+yell();
 
