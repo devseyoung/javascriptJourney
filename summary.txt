@@ -73,5 +73,17 @@ function yell(name = 'Seyoung Kim') {
 
 
 
+Debugging (javascript)
+
+console.group();
+console.groupEnd();
+
+=> Make data easy to check.
+
+Grabbing elements
+=> html elements
+$0 => select somthing on website with inspector and type $0 to check the element that you clicklast time.
+
+Breakpoints, Network => in source tab
 
 
