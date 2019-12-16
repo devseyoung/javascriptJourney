@@ -31,3 +31,5 @@ signupForm.name.addEventListener('keydown', logEvent);
 signupForm.name.addEventListener('focus', logEvent);
 // 'blur'
 signupForm.name.addEventListener('blur', logEvent);
+
+// keycode.info => to check key code
