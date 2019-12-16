@@ -22,7 +22,7 @@ const img = document.createElement('img');
 // set the source to an image
 
 img.src = 'https://picsum.photos/500';
-// set the width to 250
+// set the width to 250 
 img.width = 250;
 img.height = 250;
 // add a class of cute
