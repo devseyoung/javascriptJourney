@@ -12,32 +12,41 @@ const hooray = () => {
 butts.addEventListener('click', handleClick);
 // coolButton.addEventListener('click', handleClick);
 coolButton.addEventListener('click', hooray);
+butts.removeEventListener('click', handleClick);
 
 // binding and unbinding functions
-// butts.removeEventListener('click', handleClick);
 
 // listen on multiple items
 const buyButtons = document.querySelectorAll('button.buy');
 
 // console.log(buyButtons);
 
-function buyItem() {
-        console.log('BUYING ITEM');
+function handleBuyButtonClick(e) {
+        const button = e.target;
+
+        // console.log(button.textContent);
+        // console.log('You are buying it!');
+        // console.log(parseFloat(event.target.dataset.price));
+        console.log(e.currentTarget);
+        console.log(e.target);
+        console.log(e.target === e.currentTarget);
+
+        // STOP this event from bubbling up (making it working serperate from window's function)
+        e.stopPropagation();
 }
 
-// buyButtons.addEventListener('click', buyItem);
+buyButtons.forEach(function(buyButton) {
+        buyButton.addEventListener('click', handleBuyButtonClick);
+});
 
-// console.log(buyButtons);
+window.addEventListener('click', function(e) {
+        console.log('YOU CLICKED THE WINDOW');
+        console.log(e.target);
+});
 
-function handleBuyButtonClick(buyButton) {
-        console.log('Binding the buy button');
-        buyButton.addEventListener('click', buyItem);
-}
+const photoE1 = document.querySelector('.photo');
 
-// buyButtons.forEach(handleBuyButtonClick);
-
-buyButtons.forEach(button => {
-        button.addEventListener('click', () => {
-                console.log('You clicked it');
-        });
+photoE1.addEventListener('mousemove', function(e) {
+        console.count(e.currentTarget);
+        // console.log(this);
 });
