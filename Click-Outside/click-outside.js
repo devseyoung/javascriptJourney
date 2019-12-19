@@ -4,6 +4,7 @@ const modalInner = document.querySelector('.modal-inner');
 
 function handleCardButtonClick(event) {
         const button = event.currentTarget;
+        // find the closest card
         const card = button.closest('.card');
         // Grab the image src
         const imgSrc = card.querySelector('img').src;
