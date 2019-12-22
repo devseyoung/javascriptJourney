@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Truthy or Falsy</title>
+</head>
+<script>
+  const values = [
+    [], {}, -10, 1, 0, '', 'full string', ' ', undefined, NaN, null
+  ];
+  console.group('Truthy or falsy things');
+  values.forEach(value => {
+    if (value) {
+      console.log(value, 'is truthy');
+    } else {
+      console.log(value, 'is falsy');
+    }
+  });
+  console.groupEnd();
+</script>
+
+<body>
+
+</body>
+
+</html>
