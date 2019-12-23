@@ -98,6 +98,14 @@
     // const pizzaSlice = numbers.slice(2, 4 + 1);
     // console.log(pizzaSlice);
     // console.log(numbers);
+    function createRange(start, end) {
+      const range = Array.from({
+        length: end - start + 1
+      }, function (item, index) {
+        return index + start;
+      });
+      return range;
+    }
   </script>
 </body>
 
