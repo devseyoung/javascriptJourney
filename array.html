@@ -16,13 +16,18 @@
 
     console.log(names[0]);
     console.log(names.length);
+    // access the last item
     console.log(names[names.length - 1]);
 
+    // add it to the end
     names.push('lux');
     console.log(names);
     const names2 = [...names, 'lux'];
+
+    // add it to the front
     names.unshift('poppy');
     console.log(names);
+
     const names3 = ['poppy', ...names];
     console.log(names3);
 
@@ -79,15 +84,18 @@
     // console.log(numbers);
 
     // // Mutation Methods - DO CHANGE THE ORIGINAL DATA
+
     // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     // // anytime you want to use a mutation method and NOT mutate the orignal array
-    // // we need to take a copy of the array
+    // // we need to take a copy of the array, by spreading the old one into new one
+
     // const numbersReversed = [...numbers].reverse();
     // console.log(numbersReversed);
     // // numbers.reverse();
     // console.log(numbers);
+
     // // Immutable - THEY DO NOT CHANGE THE ORIGINAL DATA
-    // const pizzaSlice = numbers.slice(2, 4);
+    // const pizzaSlice = numbers.slice(2, 4 + 1);
     // console.log(pizzaSlice);
     // console.log(numbers);
   </script>
