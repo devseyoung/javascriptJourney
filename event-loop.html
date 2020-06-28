@@ -2,21 +2,73 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Event-loop</title>
-  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./base.css" />
 </head>
 
 <body>
-  <script>
-    console.log('starting');
-    setTimeout(function () {
-      console.log('Running');
-    }, 2000);
+  <style>
+    .go {
+      margin: 5rem;
+      background: white;
+      padding: 5rem;
+      width: 25rem;
+    }
 
-    console.log('ending');
+    .go.circle {
+      border-radius: 50%;
+    }
+
+    .go.red {
+      background-color: red;
+    }
+
+    .go.purple {
+      background-color: purple;
+      color: white;
+    }
+
+    .go.fadeOut {
+      opacity: 0;
+
+    }
+  </style>
+  <div class="go">Click Me</div>
+  <script>
+    const go = document.querySelector('.go');
+    // console.log('starting');
+    // setTimeout(function () {
+    //   console.log('Running');
+    // }, 2000);
+    // console.log('ending');
+
+    // 1. Change the text to GO When Clicked
+    go.addEventListener('click', function (e) {
+      const el = e.currentTarget;
+      el.textContent = 'GO!';
+      console.log(el);
+      // 1. Make it a circle after 2 seconds
+      setTimeout(function () {
+        el.classList.add('circle');
+        // 2. Make it red after 0.5s
+        setTimeout(function () {
+          el.classList.add('red');
+          setTimeout(function () {
+            el.classList.remove('circle');
+            setTimeout(function () {
+              el.classList.remove('remove');
+              el.classList.add('purple');
+              setTimeout(function () {
+                el.classList.add('fadeOut');
+              }, 500);
+            }, 300);
+          }, 200);
+        }, 500);
+      }, 2000);
+    });
   </script>
 </body>
 
